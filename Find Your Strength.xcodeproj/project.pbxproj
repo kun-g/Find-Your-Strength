@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E121BF2E4460081F06C /* AppDelegate.swift */; };
+		BECF9E151BF2E4460081F06C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E141BF2E4460081F06C /* ViewController.swift */; };
+		BECF9E181BF2E4460081F06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E161BF2E4460081F06C /* Main.storyboard */; };
+		BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */; };
+		BECF9E1D1BF2E4460081F06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E1C1BF2E4460081F06C /* Assets.xcassets */; };
+		BECF9E201BF2E4460081F06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E1E1BF2E4460081F06C /* LaunchScreen.storyboard */; };
+		BECF9E2B1BF2E4460081F06C /* Find_Your_StrengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E2A1BF2E4460081F06C /* Find_Your_StrengthTests.swift */; };
+		BECF9E361BF2E4460081F06C /* Find_Your_StrengthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E351BF2E4460081F06C /* Find_Your_StrengthUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BECF9E271BF2E4460081F06C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BECF9E071BF2E4450081F06C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BECF9E0E1BF2E4460081F06C;
+			remoteInfo = "Find Your Strength";
+		};
+		BECF9E321BF2E4460081F06C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BECF9E071BF2E4450081F06C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BECF9E0E1BF2E4460081F06C;
+			remoteInfo = "Find Your Strength";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BECF9E0F1BF2E4460081F06C /* Find Your Strength.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Your Strength.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECF9E121BF2E4460081F06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BECF9E141BF2E4460081F06C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BECF9E171BF2E4460081F06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BECF9E1A1BF2E4460081F06C /* Find_Your_Strength.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Find_Your_Strength.xcdatamodel; sourceTree = "<group>"; };
+		BECF9E1C1BF2E4460081F06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BECF9E1F1BF2E4460081F06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BECF9E211BF2E4460081F06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECF9E261BF2E4460081F06C /* Find Your StrengthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find Your StrengthTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECF9E2A1BF2E4460081F06C /* Find_Your_StrengthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_StrengthTests.swift; sourceTree = "<group>"; };
+		BECF9E2C1BF2E4460081F06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECF9E311BF2E4460081F06C /* Find Your StrengthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find Your StrengthUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECF9E351BF2E4460081F06C /* Find_Your_StrengthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_StrengthUITests.swift; sourceTree = "<group>"; };
+		BECF9E371BF2E4460081F06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BECF9E0C1BF2E4460081F06C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF9E231BF2E4460081F06C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF9E2E1BF2E4460081F06C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BECF9E061BF2E4450081F06C = {
+			isa = PBXGroup;
+			children = (
+				BECF9E111BF2E4460081F06C /* Find Your Strength */,
+				BECF9E291BF2E4460081F06C /* Find Your StrengthTests */,
+				BECF9E341BF2E4460081F06C /* Find Your StrengthUITests */,
+				BECF9E101BF2E4460081F06C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BECF9E101BF2E4460081F06C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BECF9E0F1BF2E4460081F06C /* Find Your Strength.app */,
+				BECF9E261BF2E4460081F06C /* Find Your StrengthTests.xctest */,
+				BECF9E311BF2E4460081F06C /* Find Your StrengthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BECF9E111BF2E4460081F06C /* Find Your Strength */ = {
+			isa = PBXGroup;
+			children = (
+				BECF9E121BF2E4460081F06C /* AppDelegate.swift */,
+				BECF9E141BF2E4460081F06C /* ViewController.swift */,
+				BECF9E161BF2E4460081F06C /* Main.storyboard */,
+				BECF9E1C1BF2E4460081F06C /* Assets.xcassets */,
+				BECF9E1E1BF2E4460081F06C /* LaunchScreen.storyboard */,
+				BECF9E211BF2E4460081F06C /* Info.plist */,
+				BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */,
+			);
+			path = "Find Your Strength";
+			sourceTree = "<group>";
+		};
+		BECF9E291BF2E4460081F06C /* Find Your StrengthTests */ = {
+			isa = PBXGroup;
+			children = (
+				BECF9E2A1BF2E4460081F06C /* Find_Your_StrengthTests.swift */,
+				BECF9E2C1BF2E4460081F06C /* Info.plist */,
+			);
+			path = "Find Your StrengthTests";
+			sourceTree = "<group>";
+		};
+		BECF9E341BF2E4460081F06C /* Find Your StrengthUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BECF9E351BF2E4460081F06C /* Find_Your_StrengthUITests.swift */,
+				BECF9E371BF2E4460081F06C /* Info.plist */,
+			);
+			path = "Find Your StrengthUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BECF9E0E1BF2E4460081F06C /* Find Your Strength */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BECF9E3A1BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your Strength" */;
+			buildPhases = (
+				BECF9E0B1BF2E4460081F06C /* Sources */,
+				BECF9E0C1BF2E4460081F06C /* Frameworks */,
+				BECF9E0D1BF2E4460081F06C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Your Strength";
+			productName = "Find Your Strength";
+			productReference = BECF9E0F1BF2E4460081F06C /* Find Your Strength.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BECF9E251BF2E4460081F06C /* Find Your StrengthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BECF9E3D1BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your StrengthTests" */;
+			buildPhases = (
+				BECF9E221BF2E4460081F06C /* Sources */,
+				BECF9E231BF2E4460081F06C /* Frameworks */,
+				BECF9E241BF2E4460081F06C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BECF9E281BF2E4460081F06C /* PBXTargetDependency */,
+			);
+			name = "Find Your StrengthTests";
+			productName = "Find Your StrengthTests";
+			productReference = BECF9E261BF2E4460081F06C /* Find Your StrengthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BECF9E301BF2E4460081F06C /* Find Your StrengthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BECF9E401BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your StrengthUITests" */;
+			buildPhases = (
+				BECF9E2D1BF2E4460081F06C /* Sources */,
+				BECF9E2E1BF2E4460081F06C /* Frameworks */,
+				BECF9E2F1BF2E4460081F06C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BECF9E331BF2E4460081F06C /* PBXTargetDependency */,
+			);
+			name = "Find Your StrengthUITests";
+			productName = "Find Your StrengthUITests";
+			productReference = BECF9E311BF2E4460081F06C /* Find Your StrengthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BECF9E071BF2E4450081F06C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Lambda Theory";
+				TargetAttributes = {
+					BECF9E0E1BF2E4460081F06C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					BECF9E251BF2E4460081F06C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BECF9E0E1BF2E4460081F06C;
+					};
+					BECF9E301BF2E4460081F06C = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = BECF9E0E1BF2E4460081F06C;
+					};
+				};
+			};
+			buildConfigurationList = BECF9E0A1BF2E4450081F06C /* Build configuration list for PBXProject "Find Your Strength" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BECF9E061BF2E4450081F06C;
+			productRefGroup = BECF9E101BF2E4460081F06C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BECF9E0E1BF2E4460081F06C /* Find Your Strength */,
+				BECF9E251BF2E4460081F06C /* Find Your StrengthTests */,
+				BECF9E301BF2E4460081F06C /* Find Your StrengthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BECF9E0D1BF2E4460081F06C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECF9E201BF2E4460081F06C /* LaunchScreen.storyboard in Resources */,
+				BECF9E1D1BF2E4460081F06C /* Assets.xcassets in Resources */,
+				BECF9E181BF2E4460081F06C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF9E241BF2E4460081F06C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF9E2F1BF2E4460081F06C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BECF9E0B1BF2E4460081F06C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECF9E151BF2E4460081F06C /* ViewController.swift in Sources */,
+				BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */,
+				BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF9E221BF2E4460081F06C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECF9E2B1BF2E4460081F06C /* Find_Your_StrengthTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF9E2D1BF2E4460081F06C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECF9E361BF2E4460081F06C /* Find_Your_StrengthUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BECF9E281BF2E4460081F06C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BECF9E0E1BF2E4460081F06C /* Find Your Strength */;
+			targetProxy = BECF9E271BF2E4460081F06C /* PBXContainerItemProxy */;
+		};
+		BECF9E331BF2E4460081F06C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BECF9E0E1BF2E4460081F06C /* Find Your Strength */;
+			targetProxy = BECF9E321BF2E4460081F06C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BECF9E161BF2E4460081F06C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BECF9E171BF2E4460081F06C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BECF9E1E1BF2E4460081F06C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BECF9E1F1BF2E4460081F06C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BECF9E381BF2E4460081F06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BECF9E391BF2E4460081F06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BECF9E3B1BF2E4460081F06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Find Your Strength/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.LambdaTheory.Find-Your-Strength";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BECF9E3C1BF2E4460081F06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Find Your Strength/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.LambdaTheory.Find-Your-Strength";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BECF9E3E1BF2E4460081F06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Find Your StrengthTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.LambdaTheory.Find-Your-StrengthTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Your Strength.app/Find Your Strength";
+			};
+			name = Debug;
+		};
+		BECF9E3F1BF2E4460081F06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Find Your StrengthTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.LambdaTheory.Find-Your-StrengthTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Your Strength.app/Find Your Strength";
+			};
+			name = Release;
+		};
+		BECF9E411BF2E4460081F06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Find Your StrengthUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.LambdaTheory.Find-Your-StrengthUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Find Your Strength";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BECF9E421BF2E4460081F06C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Find Your StrengthUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.LambdaTheory.Find-Your-StrengthUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Find Your Strength";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BECF9E0A1BF2E4450081F06C /* Build configuration list for PBXProject "Find Your Strength" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECF9E381BF2E4460081F06C /* Debug */,
+				BECF9E391BF2E4460081F06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BECF9E3A1BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your Strength" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECF9E3B1BF2E4460081F06C /* Debug */,
+				BECF9E3C1BF2E4460081F06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BECF9E3D1BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your StrengthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECF9E3E1BF2E4460081F06C /* Debug */,
+				BECF9E3F1BF2E4460081F06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BECF9E401BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your StrengthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECF9E411BF2E4460081F06C /* Debug */,
+				BECF9E421BF2E4460081F06C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BECF9E1A1BF2E4460081F06C /* Find_Your_Strength.xcdatamodel */,
+			);
+			currentVersion = BECF9E1A1BF2E4460081F06C /* Find_Your_Strength.xcdatamodel */;
+			path = Find_Your_Strength.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BECF9E071BF2E4450081F06C /* Project object */;
+}
