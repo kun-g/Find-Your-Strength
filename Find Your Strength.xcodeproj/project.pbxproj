@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BF5EF0C2E405B905904371A /* Pods_Find_Your_Strength.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC0426F01C57624BA483656 /* Pods_Find_Your_Strength.framework */; };
 		BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E121BF2E4460081F06C /* AppDelegate.swift */; };
 		BECF9E151BF2E4460081F06C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E141BF2E4460081F06C /* ViewController.swift */; };
 		BECF9E181BF2E4460081F06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E161BF2E4460081F06C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		BECF9E201BF2E4460081F06C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E1E1BF2E4460081F06C /* LaunchScreen.storyboard */; };
 		BECF9E2B1BF2E4460081F06C /* Find_Your_StrengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E2A1BF2E4460081F06C /* Find_Your_StrengthTests.swift */; };
 		BECF9E361BF2E4460081F06C /* Find_Your_StrengthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E351BF2E4460081F06C /* Find_Your_StrengthUITests.swift */; };
+		BECF9E441BF2E59F0081F06C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E431BF2E59F0081F06C /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5173A1730445D299C2054670 /* Pods-Find Your Strength.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Your Strength.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find Your Strength/Pods-Find Your Strength.release.xcconfig"; sourceTree = "<group>"; };
+		6DC0426F01C57624BA483656 /* Pods_Find_Your_Strength.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_Your_Strength.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9274E95C5DDEDEFF21C3067B /* Pods-Find Your Strength.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Your Strength.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find Your Strength/Pods-Find Your Strength.debug.xcconfig"; sourceTree = "<group>"; };
 		BECF9E0F1BF2E4460081F06C /* Find Your Strength.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Your Strength.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECF9E121BF2E4460081F06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECF9E141BF2E4460081F06C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		BECF9E311BF2E4460081F06C /* Find Your StrengthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find Your StrengthUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECF9E351BF2E4460081F06C /* Find_Your_StrengthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_StrengthUITests.swift; sourceTree = "<group>"; };
 		BECF9E371BF2E4460081F06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECF9E431BF2E59F0081F06C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF5EF0C2E405B905904371A /* Pods_Find_Your_Strength.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13569F913F7A10069661EDC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9274E95C5DDEDEFF21C3067B /* Pods-Find Your Strength.debug.xcconfig */,
+				5173A1730445D299C2054670 /* Pods-Find Your Strength.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44BC6DF309275EB6E4D35803 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DC0426F01C57624BA483656 /* Pods_Find_Your_Strength.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BECF9E061BF2E4450081F06C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,8 @@
 				BECF9E291BF2E4460081F06C /* Find Your StrengthTests */,
 				BECF9E341BF2E4460081F06C /* Find Your StrengthUITests */,
 				BECF9E101BF2E4460081F06C /* Products */,
+				13569F913F7A10069661EDC7 /* Pods */,
+				44BC6DF309275EB6E4D35803 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +132,7 @@
 				BECF9E1E1BF2E4460081F06C /* LaunchScreen.storyboard */,
 				BECF9E211BF2E4460081F06C /* Info.plist */,
 				BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */,
+				BECF9E451BF2EAFF0081F06C /* Controller */,
 			);
 			path = "Find Your Strength";
 			sourceTree = "<group>";
@@ -128,6 +155,14 @@
 			path = "Find Your StrengthUITests";
 			sourceTree = "<group>";
 		};
+		BECF9E451BF2EAFF0081F06C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BECF9E431BF2E59F0081F06C /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BECF9E3A1BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your Strength" */;
 			buildPhases = (
+				FD21CB926C7486936AC82807 /* Check Pods Manifest.lock */,
 				BECF9E0B1BF2E4460081F06C /* Sources */,
 				BECF9E0C1BF2E4460081F06C /* Frameworks */,
 				BECF9E0D1BF2E4460081F06C /* Resources */,
+				D51D5B1C2738824CFA13EC72 /* Embed Pods Frameworks */,
+				D1F60D155CDAB63749521EE7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +292,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D1F60D155CDAB63749521EE7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find Your Strength/Pods-Find Your Strength-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51D5B1C2738824CFA13EC72 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find Your Strength/Pods-Find Your Strength-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD21CB926C7486936AC82807 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BECF9E0B1BF2E4460081F06C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECF9E441BF2E59F0081F06C /* MainViewController.swift in Sources */,
 				BECF9E151BF2E4460081F06C /* ViewController.swift in Sources */,
 				BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */,
 				BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */,
@@ -401,6 +488,7 @@
 		};
 		BECF9E3B1BF2E4460081F06C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9274E95C5DDEDEFF21C3067B /* Pods-Find Your Strength.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Find Your Strength/Info.plist";
@@ -412,6 +500,7 @@
 		};
 		BECF9E3C1BF2E4460081F06C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5173A1730445D299C2054670 /* Pods-Find Your Strength.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Find Your Strength/Info.plist";
@@ -488,6 +577,7 @@
 				BECF9E3C1BF2E4460081F06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECF9E3D1BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your StrengthTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +586,7 @@
 				BECF9E3F1BF2E4460081F06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECF9E401BF2E4460081F06C /* Build configuration list for PBXNativeTarget "Find Your StrengthUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +595,7 @@
 				BECF9E421BF2E4460081F06C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
