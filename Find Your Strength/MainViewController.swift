@@ -50,7 +50,18 @@ class MainViewController : UIViewController {
     
     @IBAction func onSurveyTouch(sender: AnyObject) {
         if hasReport {
-            // TODO: present an alert
+            let alert = UIAlertController(title: "Notice", message: "This action will overwrite the survey result, continue?", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Continue", style: .Default, handler: { (action: UIAlertAction!) in
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.performSegueWithIdentifier("startSurvey", sender: self)
+                })
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+            }))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
         } else {
             performSegueWithIdentifier("startSurvey", sender: self)
         }
@@ -72,7 +83,6 @@ class MainViewController : UIViewController {
     func continueSurvey () {
         // TODO: restore survey
     }
-    
 }
 
 extension MainViewController: PFLogInViewControllerDelegate {

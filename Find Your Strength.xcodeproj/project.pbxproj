@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6BF5EF0C2E405B905904371A /* Pods_Find_Your_Strength.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC0426F01C57624BA483656 /* Pods_Find_Your_Strength.framework */; };
 		BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E121BF2E4460081F06C /* AppDelegate.swift */; };
-		BECF9E151BF2E4460081F06C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E141BF2E4460081F06C /* ViewController.swift */; };
 		BECF9E181BF2E4460081F06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E161BF2E4460081F06C /* Main.storyboard */; };
 		BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */; };
 		BECF9E1D1BF2E4460081F06C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E1C1BF2E4460081F06C /* Assets.xcassets */; };
@@ -17,6 +16,12 @@
 		BECF9E2B1BF2E4460081F06C /* Find_Your_StrengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E2A1BF2E4460081F06C /* Find_Your_StrengthTests.swift */; };
 		BECF9E361BF2E4460081F06C /* Find_Your_StrengthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E351BF2E4460081F06C /* Find_Your_StrengthUITests.swift */; };
 		BECF9E441BF2E59F0081F06C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E431BF2E59F0081F06C /* MainViewController.swift */; };
+		BECF9E471BF37C790081F06C /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E461BF37C790081F06C /* SurveyViewController.swift */; };
+		BECF9E491BF383990081F06C /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E481BF383990081F06C /* Survey.swift */; };
+		BECF9E4C1BF383AF0081F06C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E4B1BF383AF0081F06C /* Question.swift */; };
+		BECF9E4E1BF384880081F06C /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E4D1BF384880081F06C /* CoreDataStackManager.swift */; };
+		BECF9E501BF432370081F06C /* SurveyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E4F1BF432370081F06C /* SurveyLib.swift */; };
+		BECF9E521BF432D00081F06C /* SurveyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E511BF432D00081F06C /* SurveyItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,6 @@
 		9274E95C5DDEDEFF21C3067B /* Pods-Find Your Strength.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Your Strength.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find Your Strength/Pods-Find Your Strength.debug.xcconfig"; sourceTree = "<group>"; };
 		BECF9E0F1BF2E4460081F06C /* Find Your Strength.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Your Strength.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECF9E121BF2E4460081F06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BECF9E141BF2E4460081F06C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BECF9E171BF2E4460081F06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BECF9E1A1BF2E4460081F06C /* Find_Your_Strength.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Find_Your_Strength.xcdatamodel; sourceTree = "<group>"; };
 		BECF9E1C1BF2E4460081F06C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +59,12 @@
 		BECF9E351BF2E4460081F06C /* Find_Your_StrengthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_StrengthUITests.swift; sourceTree = "<group>"; };
 		BECF9E371BF2E4460081F06C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BECF9E431BF2E59F0081F06C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BECF9E461BF37C790081F06C /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		BECF9E481BF383990081F06C /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		BECF9E4B1BF383AF0081F06C /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		BECF9E4D1BF384880081F06C /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
+		BECF9E4F1BF432370081F06C /* SurveyLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyLib.swift; sourceTree = "<group>"; };
+		BECF9E511BF432D00081F06C /* SurveyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +136,13 @@
 			isa = PBXGroup;
 			children = (
 				BECF9E121BF2E4460081F06C /* AppDelegate.swift */,
-				BECF9E141BF2E4460081F06C /* ViewController.swift */,
 				BECF9E161BF2E4460081F06C /* Main.storyboard */,
 				BECF9E1C1BF2E4460081F06C /* Assets.xcassets */,
 				BECF9E1E1BF2E4460081F06C /* LaunchScreen.storyboard */,
 				BECF9E211BF2E4460081F06C /* Info.plist */,
 				BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */,
 				BECF9E451BF2EAFF0081F06C /* Controller */,
+				BECF9E4A1BF383A00081F06C /* Model */,
 			);
 			path = "Find Your Strength";
 			sourceTree = "<group>";
@@ -159,8 +169,21 @@
 			isa = PBXGroup;
 			children = (
 				BECF9E431BF2E59F0081F06C /* MainViewController.swift */,
+				BECF9E461BF37C790081F06C /* SurveyViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		BECF9E4A1BF383A00081F06C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BECF9E481BF383990081F06C /* Survey.swift */,
+				BECF9E4B1BF383AF0081F06C /* Question.swift */,
+				BECF9E4D1BF384880081F06C /* CoreDataStackManager.swift */,
+				BECF9E4F1BF432370081F06C /* SurveyLib.swift */,
+				BECF9E511BF432D00081F06C /* SurveyItem.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,9 +369,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BECF9E441BF2E59F0081F06C /* MainViewController.swift in Sources */,
-				BECF9E151BF2E4460081F06C /* ViewController.swift in Sources */,
+				BECF9E521BF432D00081F06C /* SurveyItem.swift in Sources */,
 				BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */,
+				BECF9E491BF383990081F06C /* Survey.swift in Sources */,
+				BECF9E4E1BF384880081F06C /* CoreDataStackManager.swift in Sources */,
+				BECF9E4C1BF383AF0081F06C /* Question.swift in Sources */,
 				BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */,
+				BECF9E471BF37C790081F06C /* SurveyViewController.swift in Sources */,
+				BECF9E501BF432370081F06C /* SurveyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
