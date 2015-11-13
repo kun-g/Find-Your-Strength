@@ -22,6 +22,7 @@
 		BECF9E4E1BF384880081F06C /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E4D1BF384880081F06C /* CoreDataStackManager.swift */; };
 		BECF9E501BF432370081F06C /* SurveyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E4F1BF432370081F06C /* SurveyLib.swift */; };
 		BECF9E521BF432D00081F06C /* SurveyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E511BF432D00081F06C /* SurveyItem.swift */; };
+		BECF9E541BF48D990081F06C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E531BF48D990081F06C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BECF9E4D1BF384880081F06C /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
 		BECF9E4F1BF432370081F06C /* SurveyLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyLib.swift; sourceTree = "<group>"; };
 		BECF9E511BF432D00081F06C /* SurveyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyItem.swift; sourceTree = "<group>"; };
+		BECF9E531BF48D990081F06C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				BECF9E4D1BF384880081F06C /* CoreDataStackManager.swift */,
 				BECF9E4F1BF432370081F06C /* SurveyLib.swift */,
 				BECF9E511BF432D00081F06C /* SurveyItem.swift */,
+				BECF9E531BF48D990081F06C /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				BECF9E4C1BF383AF0081F06C /* Question.swift in Sources */,
 				BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */,
 				BECF9E471BF37C790081F06C /* SurveyViewController.swift in Sources */,
+				BECF9E541BF48D990081F06C /* User.swift in Sources */,
 				BECF9E501BF432370081F06C /* SurveyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,24 +16,26 @@ class SurveyViewController : UIViewController {
     @IBOutlet weak var answerControl: UISegmentedControl!
     @IBOutlet weak var progressBar: UIProgressView!
     
+    var survey : Survey!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setupCurrentQuestion()
+        setupCurrentQuestion()
     }
-    
+    /*
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         setupCurrentQuestion()
-    }
+    }*/
     
     func setupCurrentQuestion () {
-        questionLabel.text = Survey.currentQuestion.content
-        answerControl.selectedSegmentIndex = Survey.currentQuestion.answer.integerValue
-        progressBar.progress = Survey.progress
+        questionLabel.text = survey.lastQuestion!.content
+        answerControl.selectedSegmentIndex = survey.lastQuestion!.answer.rawValue
+        progressBar.progress = survey.progress
     }
     
     func nextQuestion () {
-        if Survey.next() != nil {
+        if survey.next() != nil {
             setupCurrentQuestion()
         } else {
             onSurveyComplete()
@@ -45,7 +47,7 @@ class SurveyViewController : UIViewController {
     }
     
     @IBAction func onAnswerSelected(sender: UISegmentedControl) {
-        Survey.currentQuestion.answer = answerControl.selectedSegmentIndex
-        nextQuestion()
+        //Survey.currentQuestion.answer = answerControl.selectedSegmentIndex
+        //nextQuestion()
     }
 }

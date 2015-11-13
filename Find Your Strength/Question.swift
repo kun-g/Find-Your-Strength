@@ -14,11 +14,26 @@ class Question : NSManagedObject {
         case Name = "Question"
     }
     
-    @NSManaged var answer : NSNumber
-    @NSManaged var id : NSNumber
+    enum Answer : Int {
+        case Nil = -1
+        case Yes = 1
+        case Likely = 2
+        case Neutral = 3
+        case Unlikely = 4
+        case No = 5
+    }
+    
+    @NSManaged var answerRaw : Int16
+    @NSManaged var id : Int32
+    @NSManaged var survey : Survey
+    
+    var answer : Answer {
+        get { return Answer(rawValue: Int(answerRaw)) ?? .Nil }
+        set { answerRaw = Int16(newValue.rawValue) }
+    }
     
     lazy var question : SurveyItem = {
-        return SurveyLib.content(atIndex: self.id.integerValue)
+        return SurveyLib.content(atIndex: Int(self.id))
     }()
     
     var content : String? {
@@ -28,11 +43,17 @@ class Question : NSManagedObject {
         return question.inverse
     }
     
-    init(id : Int, context: NSManagedObjectContext) {
+    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertIntoManagedObjectContext: context)
+    }
+    
+    init(survey: Survey, id : Int, context: NSManagedObjectContext) {
         let entity = NSEntityDescription.entityForName(EntitiName.Name.rawValue, inManagedObjectContext: context)!
         super.init(entity: entity, insertIntoManagedObjectContext: context)
         
-        self.id = id
+        self.id = Int32(id)
+        self.survey = survey
+        answer = .Nil
     }
     
     override func prepareForDeletion() {

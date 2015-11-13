@@ -15,55 +15,47 @@ class Survey: NSManagedObject {
     }
     
     @NSManaged var questions: NSSet
+    @NSManaged var user: User
     var lastQuestion : Question?
     
-    init() {
-        let entity = NSEntityDescription.entityForName(EntitiName.Name.rawValue, inManagedObjectContext: Survey.sharedContext)!
-        super.init(entity: entity, insertIntoManagedObjectContext: Survey.sharedContext)
-        Survey.next()
+    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertIntoManagedObjectContext: context)
+    }
+    
+    init(user: User, insertIntoManagedObjectContext context: NSManagedObjectContext) {
+        let entity = NSEntityDescription.entityForName(EntitiName.Name.rawValue, inManagedObjectContext: context)!
+        super.init(entity: entity, insertIntoManagedObjectContext: context)
+        self.user = user
     }
     
     override func awakeFromFetch() {
         super.awakeFromFetch()
-        lastQuestion = questions.sortedArrayUsingDescriptors([NSSortDescriptor(key: "id", ascending: true)]).last as? Question
     }
-}
+    
+    var progress: Float {
+        return Float(questions.count)/Float(SurveyLib.sharedInstance.count)
+    }
 
-extension Survey {
-    static var sharedInstance: Survey {
-        struct Static {
-            static let instance = Survey()
+    func next() -> Question? {
+        guard progress < 1 else {
+            return nil
         }
-        return Static.instance
-    }
-    
-    static var sharedContext: NSManagedObjectContext {
-        return CoreDataManager.sharedInstance().managedObjectContext
-    }
-    
-    static var currentQuestion: Question {
-        get {
-            return sharedInstance.lastQuestion!
+        
+        let lastQuestionNotAnswerd = lastQuestion != nil && lastQuestion!.answer == .Nil
+        let hasLastQuestionButNotLoaded = lastQuestion == nil && questions.count != 0
+        
+        // TODO: fix this hardcoded -1
+        if lastQuestionNotAnswerd {
+            return lastQuestion
+        } else if hasLastQuestionButNotLoaded {
+            lastQuestion = questions.sortedArrayUsingDescriptors([NSSortDescriptor(key: "id", ascending: true)]).last as? Question
+        } else {
+            lastQuestion = Question(survey:self, id: currentQuestionID, context: CoreDataManager.sharedInstance().managedObjectContext)
         }
-
-        set (newVal) {
-            sharedInstance.lastQuestion = newVal
-        }
+        return lastQuestion
     }
     
-    static var currentQuestionID : Int {
-        return sharedInstance.questions.count + 1
-    }
-    
-    static var progress: Float {
-        return Float(sharedInstance.questions.count)/Float(Survey.sharedInstance.questions.count)
-    }
-    
-    class func next() -> Question? {
-        if progress < 1 {
-            currentQuestion = Question(id: currentQuestionID, context: sharedContext)
-            return currentQuestion
-        }
-        return nil
+    var currentQuestionID : Int {
+        return questions.count + 1
     }
 }

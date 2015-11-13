@@ -34,6 +34,6 @@ extension SurveyLib {
     }
 
     class func content(atIndex id: Int) -> SurveyItem {
-        return SurveyLib.sharedInstance.surveies[id]
+        return SurveyLib.sharedInstance.surveies[id-1]
     }
 }

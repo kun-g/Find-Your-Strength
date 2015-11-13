@@ -13,7 +13,9 @@ import ParseUI
 class MainViewController : UIViewController {
     
     // TODO : finish these
-    let hasOngoingSurvey = false
+    var hasOngoingSurvey : Bool {
+        return User.sharedInstance != nil && User.sharedInstance!.survey.progress < 1
+    }
     let hasReport = false
 
     @IBOutlet weak var reportButton: UIButton!
@@ -40,6 +42,10 @@ class MainViewController : UIViewController {
             logInController.delegate = self
             logInController.signUpController?.delegate = self
             self.presentViewController(logInController, animated:true, completion: nil)
+        } else {
+            if User.loadUser((PFUser.currentUser()?.username)!) == nil {
+                User.newUser((PFUser.currentUser()?.username!)!)
+            }
         }
     }
     
@@ -75,13 +81,15 @@ class MainViewController : UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "startSurvey" {
-            //let controller = segue.destinationViewController as! HistoryViewController
+            User.sharedInstance?.startSurvey()
+            let controller = segue.destinationViewController as! SurveyViewController
+            controller.survey = User.sharedInstance?.survey
         } else if segue.identifier == "showReport" {
         }
     }
     
     func continueSurvey () {
-        // TODO: restore survey
+        performSegueWithIdentifier("startSurvey", sender: self)
     }
 }
 
