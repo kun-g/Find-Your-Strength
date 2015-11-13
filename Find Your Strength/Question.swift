@@ -16,11 +16,11 @@ class Question : NSManagedObject {
     
     enum Answer : Int {
         case Nil = -1
-        case Yes = 1
-        case Likely = 2
-        case Neutral = 3
-        case Unlikely = 4
-        case No = 5
+        case Yes = 0
+        case Likely = 1
+        case Neutral = 2
+        case Unlikely = 3
+        case No = 4
     }
     
     @NSManaged var answerRaw : Int16

@@ -16,7 +16,7 @@ class Survey: NSManagedObject {
     
     @NSManaged var questions: NSSet
     @NSManaged var user: User
-    var lastQuestion : Question?
+    var currentQuestion : Question?
     
     override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
@@ -33,7 +33,20 @@ class Survey: NSManagedObject {
     }
     
     var progress: Float {
-        return Float(questions.count)/Float(SurveyLib.sharedInstance.count)
+        let total = Float(SurveyLib.sharedInstance.count)
+        var current = 0
+        if lastQuestion != nil {
+            current = (lastQuestion!.answer != .Nil) ? questions.count : questions.count - 1
+        }
+        
+        return Float(current)/total
+    }
+    
+    var lastQuestion : Question? {
+        guard questions.count > 0 else {
+            return nil
+        }
+        return questions.sortedArrayUsingDescriptors([NSSortDescriptor(key: "id", ascending: true)]).last as? Question
     }
 
     func next() -> Question? {
@@ -41,18 +54,18 @@ class Survey: NSManagedObject {
             return nil
         }
         
-        let lastQuestionNotAnswerd = lastQuestion != nil && lastQuestion!.answer == .Nil
-        let hasLastQuestionButNotLoaded = lastQuestion == nil && questions.count != 0
+        let currentQuestionNotAnswerd = currentQuestion != nil && currentQuestion!.answer == .Nil
+        let currentQuestionButNotLoaded = currentQuestion == nil && questions.count != 0
         
         // TODO: fix this hardcoded -1
-        if lastQuestionNotAnswerd {
-            return lastQuestion
-        } else if hasLastQuestionButNotLoaded {
-            lastQuestion = questions.sortedArrayUsingDescriptors([NSSortDescriptor(key: "id", ascending: true)]).last as? Question
+        if currentQuestionNotAnswerd {
+            return currentQuestion
+        } else if currentQuestionButNotLoaded {
+            currentQuestion = lastQuestion
         } else {
-            lastQuestion = Question(survey:self, id: currentQuestionID, context: CoreDataManager.sharedInstance().managedObjectContext)
+            currentQuestion = Question(survey:self, id: currentQuestionID, context: CoreDataManager.sharedInstance().managedObjectContext)
         }
-        return lastQuestion
+        return currentQuestion
     }
     
     var currentQuestionID : Int {

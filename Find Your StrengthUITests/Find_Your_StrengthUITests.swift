@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Find_Your_Strength
 import Parse
 
 class Find_Your_StrengthUITests: XCTestCase {
@@ -20,6 +21,7 @@ class Find_Your_StrengthUITests: XCTestCase {
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
+        PFUser.logOut()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
@@ -29,7 +31,25 @@ class Find_Your_StrengthUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testSurvey() {
+        let app = XCUIApplication()
+        
+        if app.buttons["Logout"].exists {
+            app.buttons["Logout"].tap()
+        }
+        
+        let usernameTextField = app.textFields["Username"]
+        usernameTextField.tap()
+        usernameTextField.typeText("test")
+        
+        let passwordSecureTextField = app.secureTextFields["Password"]
+        passwordSecureTextField.tap()
+        passwordSecureTextField.tap()
+        passwordSecureTextField.typeText("1234")
+        app.buttons["Log In"].tap()
+        app.buttons["Start Survey"].tap()
+        app.buttons["Yes"].tap()
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

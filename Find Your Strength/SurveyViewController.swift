@@ -22,15 +22,10 @@ class SurveyViewController : UIViewController {
         super.viewDidLoad()
         setupCurrentQuestion()
     }
-    /*
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        setupCurrentQuestion()
-    }*/
     
     func setupCurrentQuestion () {
-        questionLabel.text = survey.lastQuestion!.content
-        answerControl.selectedSegmentIndex = survey.lastQuestion!.answer.rawValue
+        questionLabel.text = survey.currentQuestion!.content
+        answerControl.selectedSegmentIndex = survey.currentQuestion!.answer.rawValue
         progressBar.progress = survey.progress
     }
     
@@ -43,11 +38,13 @@ class SurveyViewController : UIViewController {
     }
     
     func onSurveyComplete() {
+        progressBar.progress = survey.progress
         // TODO: show brief report dialog
     }
     
     @IBAction func onAnswerSelected(sender: UISegmentedControl) {
-        //Survey.currentQuestion.answer = answerControl.selectedSegmentIndex
-        //nextQuestion()
+        survey.currentQuestion!.answer = Question.Answer(rawValue: answerControl.selectedSegmentIndex)!
+        nextQuestion()
+        CoreDataManager.sharedInstance().saveContext()
     }
 }

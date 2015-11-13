@@ -37,7 +37,7 @@ class Find_Your_StrengthTests: XCTestCase {
         user.startSurvey()
         XCTAssert(user.survey != nil, "Survey should not be nil")
         XCTAssert(user.survey!.questions.count == 1, "Survey should be initialized")
-        XCTAssert(user.survey.lastQuestion != nil, "Last question should be initialized")
+        XCTAssert(user.survey.currentQuestion != nil, "Last question should be initialized")
         
         CoreDataManager.sharedInstance().saveContext()
         let anotherUser = User.loadUser("Test")!
@@ -51,13 +51,12 @@ class Find_Your_StrengthTests: XCTestCase {
         let user = User.newUser("Test")!
         user.startSurvey()
         let survey = user.survey
-        XCTAssert(survey.lastQuestion!.id == 1)
+        XCTAssert(survey.currentQuestion!.id == 1)
         survey.next()
-        XCTAssert(survey.lastQuestion!.id == 1, "Can't proceed when question not answered")
+        XCTAssert(survey.currentQuestion!.id == 1, "Can't proceed when question not answered")
 
         for var i = 0; i < survey.questions.count; i++ {
-            print(survey.lastQuestion?.content)
-            survey.lastQuestion!.answer = .Likely
+            survey.currentQuestion!.answer = .Likely
             survey.next()
         }
         

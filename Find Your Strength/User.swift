@@ -27,8 +27,11 @@ class User: NSManagedObject {
         self.name = name
     }
     
-    func startSurvey() -> Survey {
-        if survey == nil {
+    func startSurvey(force : Bool = false) -> Survey {
+        if survey == nil || force { // TODO: 如果survey被覆盖了，原先的survey是否会被删除?
+            if survey != nil {
+                CoreDataManager.sharedInstance().managedObjectContext.deleteObject(survey)
+            }
             survey = Survey(user: self, insertIntoManagedObjectContext: CoreDataManager.sharedInstance().managedObjectContext)
         }
 

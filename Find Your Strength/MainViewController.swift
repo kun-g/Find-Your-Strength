@@ -11,12 +11,13 @@ import Parse
 import ParseUI
 
 class MainViewController : UIViewController {
-    
-    // TODO : finish these
     var hasOngoingSurvey : Bool {
         return User.sharedInstance != nil && User.sharedInstance!.survey.progress < 1
     }
-    let hasReport = false
+    
+    var hasReport : Bool {
+        return User.sharedInstance!.survey.progress == 1
+    }
 
     @IBOutlet weak var reportButton: UIButton!
     @IBOutlet weak var surveyButton: UIButton!
@@ -24,11 +25,15 @@ class MainViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if PFUser.currentUser() != nil {
+            loadUser()
+        }
+        
         if hasOngoingSurvey {
             continueSurvey()
-        } else {
-            reportButton.hidden = !hasReport
         }
+        
+        reportButton.hidden = !hasReport
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -43,8 +48,15 @@ class MainViewController : UIViewController {
             logInController.signUpController?.delegate = self
             self.presentViewController(logInController, animated:true, completion: nil)
         } else {
+            loadUser()
+        }
+    }
+    
+    func loadUser () {
+        if PFUser.currentUser() != nil {
             if User.loadUser((PFUser.currentUser()?.username)!) == nil {
                 User.newUser((PFUser.currentUser()?.username!)!)
+                CoreDataManager.sharedInstance().saveContext()
             }
         }
     }
@@ -60,6 +72,7 @@ class MainViewController : UIViewController {
             
             alert.addAction(UIAlertAction(title: "Continue", style: .Default, handler: { (action: UIAlertAction!) in
                 dispatch_async(dispatch_get_main_queue(), {
+                    User.sharedInstance?.startSurvey(true)
                     self.performSegueWithIdentifier("startSurvey", sender: self)
                 })
             }))
@@ -82,6 +95,7 @@ class MainViewController : UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "startSurvey" {
             User.sharedInstance?.startSurvey()
+            CoreDataManager.sharedInstance().saveContext()
             let controller = segue.destinationViewController as! SurveyViewController
             controller.survey = User.sharedInstance?.survey
         } else if segue.identifier == "showReport" {
