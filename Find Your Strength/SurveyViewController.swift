@@ -45,7 +45,7 @@ class SurveyViewController : UIViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showReport" {
-            //navigationController?.popToRootViewControllerAnimated(false)
+            navigationController?.popViewControllerAnimated(true)
             let controller = segue.destinationViewController as! ReportViewController
             controller.survey = survey
         }
