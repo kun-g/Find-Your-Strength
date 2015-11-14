@@ -22,13 +22,13 @@ class SurveyViewController : UIViewController {
         super.viewDidLoad()
         setupCurrentQuestion()
     }
-    
+
     func setupCurrentQuestion () {
         questionLabel.text = survey.currentQuestion!.content
         answerControl.selectedSegmentIndex = survey.currentQuestion!.answer.rawValue
         progressBar.progress = survey.progress
     }
-    
+
     func nextQuestion () {
         if survey.next() != nil {
             setupCurrentQuestion()
@@ -36,7 +36,7 @@ class SurveyViewController : UIViewController {
             onSurveyComplete()
         }
     }
-    
+
     func onSurveyComplete() {
         progressBar.progress = survey.progress
         performSegueWithIdentifier("showReport", sender: self)
