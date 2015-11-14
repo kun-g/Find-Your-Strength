@@ -28,7 +28,7 @@ class Find_Your_StrengthTests: XCTestCase {
         do {
             try NSFileManager.defaultManager().removeItemAtPath(url.path!)
         } catch {
-            print("Fail to delete db:\(url.path)")
+            //print("Fail to delete db:\(url.path)")
         }
     }
 
@@ -61,6 +61,7 @@ class Find_Your_StrengthTests: XCTestCase {
         }
         
         XCTAssert(survey.progress == 1, "Complete")
+        print(survey.report())
     }
     
 }

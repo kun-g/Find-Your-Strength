@@ -23,6 +23,7 @@
 		BECF9E501BF432370081F06C /* SurveyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E4F1BF432370081F06C /* SurveyLib.swift */; };
 		BECF9E521BF432D00081F06C /* SurveyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E511BF432D00081F06C /* SurveyItem.swift */; };
 		BECF9E541BF48D990081F06C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E531BF48D990081F06C /* User.swift */; };
+		BECF9E561BF6D16B0081F06C /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E551BF6D16B0081F06C /* ReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		BECF9E4F1BF432370081F06C /* SurveyLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyLib.swift; sourceTree = "<group>"; };
 		BECF9E511BF432D00081F06C /* SurveyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyItem.swift; sourceTree = "<group>"; };
 		BECF9E531BF48D990081F06C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BECF9E551BF6D16B0081F06C /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		BECF9E451BF2EAFF0081F06C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BECF9E551BF6D16B0081F06C /* ReportViewController.swift */,
 				BECF9E431BF2E59F0081F06C /* MainViewController.swift */,
 				BECF9E461BF37C790081F06C /* SurveyViewController.swift */,
 			);
@@ -375,6 +378,7 @@
 				BECF9E521BF432D00081F06C /* SurveyItem.swift in Sources */,
 				BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */,
 				BECF9E491BF383990081F06C /* Survey.swift in Sources */,
+				BECF9E561BF6D16B0081F06C /* ReportViewController.swift in Sources */,
 				BECF9E4E1BF384880081F06C /* CoreDataStackManager.swift in Sources */,
 				BECF9E4C1BF383AF0081F06C /* Question.swift in Sources */,
 				BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */,

@@ -12,7 +12,7 @@ import ParseUI
 
 class MainViewController : UIViewController {
     var hasOngoingSurvey : Bool {
-        return User.sharedInstance != nil && User.sharedInstance!.survey.progress < 1
+        return User.sharedInstance?.survey?.progress < 1
     }
     
     var hasReport : Bool {
@@ -99,6 +99,8 @@ class MainViewController : UIViewController {
             let controller = segue.destinationViewController as! SurveyViewController
             controller.survey = User.sharedInstance?.survey
         } else if segue.identifier == "showReport" {
+            let controller = segue.destinationViewController as! ReportViewController
+            controller.survey = User.sharedInstance?.survey
         }
     }
     

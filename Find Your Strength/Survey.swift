@@ -72,3 +72,28 @@ class Survey: NSManagedObject {
         return questions.count + 1
     }
 }
+
+// Calculating scores
+extension Survey {
+    enum Strength : String {
+        case StrengthA
+        case StrengthB
+        
+        static let allValues = [StrengthA, StrengthB]
+    }
+    
+    func report() -> [Strength:Int]? {
+        guard progress == 1 else {
+            return nil
+        }
+        var result = [Strength:Int]()
+        for s in Strength.allValues {
+            result[s] = 0
+        }
+        questions.forEach({
+            let question = $0 as! Question
+            result[question.strength]! += question.scoreForStrength(question.answer)
+        })
+        return result
+    }
+}

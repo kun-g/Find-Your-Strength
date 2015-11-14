@@ -21,6 +21,9 @@ class Question : NSManagedObject {
         case Neutral = 2
         case Unlikely = 3
         case No = 4
+        
+        static let score = [5, 4, 3, 2, 1]
+        static let inversedScore = [1, 2, 3, 4, 5]
     }
     
     @NSManaged var answerRaw : Int16
@@ -42,6 +45,13 @@ class Question : NSManagedObject {
     var inversed : Bool {
         return question.inverse
     }
+    var strength: Survey.Strength {
+        return question.strength
+    }
+    
+    func scoreForStrength(forAnswer:Answer) -> Int {
+        return inversed ? Answer.inversedScore[answer.rawValue] : Answer.score[answer.rawValue]
+    }
     
     override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
@@ -54,9 +64,5 @@ class Question : NSManagedObject {
         self.id = Int32(id)
         self.survey = survey
         answer = .Nil
-    }
-    
-    override func prepareForDeletion() {
-        
     }
 }

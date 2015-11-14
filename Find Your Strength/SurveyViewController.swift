@@ -39,9 +39,18 @@ class SurveyViewController : UIViewController {
     
     func onSurveyComplete() {
         progressBar.progress = survey.progress
-        // TODO: show brief report dialog
+        performSegueWithIdentifier("showReport", sender: self)
     }
-    
+
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showReport" {
+            //navigationController?.popToRootViewControllerAnimated(false)
+            let controller = segue.destinationViewController as! ReportViewController
+            controller.survey = survey
+        }
+    }
+
     @IBAction func onAnswerSelected(sender: UISegmentedControl) {
         survey.currentQuestion!.answer = Question.Answer(rawValue: answerControl.selectedSegmentIndex)!
         nextQuestion()

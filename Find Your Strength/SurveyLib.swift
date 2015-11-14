@@ -14,8 +14,8 @@ class SurveyLib {
     init() {
         // TODO: init from config file
         surveies = [
-            SurveyItem(content: "Question 1", inverse: false),
-            SurveyItem(content: "Question 2", inverse: false),
+            SurveyItem(content: "Question 1", inverse: false, strength: .StrengthA),
+            SurveyItem(content: "Question 2", inverse: false, strength: .StrengthB),
         ]
     }
     

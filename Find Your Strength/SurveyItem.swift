@@ -11,4 +11,5 @@ import Foundation
 struct SurveyItem {
     let content : String
     let inverse : Bool
+    let strength: Survey.Strength
 }
