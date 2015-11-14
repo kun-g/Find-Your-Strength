@@ -25,7 +25,7 @@ class ReportViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TableCell", forIndexPath: indexPath)
         let (strength, score) = report[indexPath.item]
-        cell.textLabel!.text = strength.rawValue
+        cell.textLabel!.text = strength.localizedString
         cell.detailTextLabel?.text = String(score)
         
         return cell

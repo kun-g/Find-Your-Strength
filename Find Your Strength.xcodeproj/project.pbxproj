@@ -24,6 +24,7 @@
 		BECF9E521BF432D00081F06C /* SurveyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E511BF432D00081F06C /* SurveyItem.swift */; };
 		BECF9E541BF48D990081F06C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E531BF48D990081F06C /* User.swift */; };
 		BECF9E561BF6D16B0081F06C /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E551BF6D16B0081F06C /* ReportViewController.swift */; };
+		BECF9E5F1BF745090081F06C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E611BF745090081F06C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,10 @@
 		BECF9E511BF432D00081F06C /* SurveyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyItem.swift; sourceTree = "<group>"; };
 		BECF9E531BF48D990081F06C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BECF9E551BF6D16B0081F06C /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		BECF9E591BF73D520081F06C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BECF9E5A1BF73D520081F06C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BECF9E601BF745090081F06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BECF9E641BF746DD0081F06C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +149,7 @@
 				BECF9E1C1BF2E4460081F06C /* Assets.xcassets */,
 				BECF9E1E1BF2E4460081F06C /* LaunchScreen.storyboard */,
 				BECF9E211BF2E4460081F06C /* Info.plist */,
+				BECF9E611BF745090081F06C /* Localizable.strings */,
 				BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */,
 				BECF9E451BF2EAFF0081F06C /* Controller */,
 				BECF9E4A1BF383A00081F06C /* Model */,
@@ -281,6 +287,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BECF9E061BF2E4450081F06C;
 			productRefGroup = BECF9E101BF2E4460081F06C /* Products */;
@@ -300,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BECF9E201BF2E4460081F06C /* LaunchScreen.storyboard in Resources */,
+				BECF9E5F1BF745090081F06C /* Localizable.strings in Resources */,
 				BECF9E1D1BF2E4460081F06C /* Assets.xcassets in Resources */,
 				BECF9E181BF2E4460081F06C /* Main.storyboard in Resources */,
 			);
@@ -424,6 +432,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BECF9E171BF2E4460081F06C /* Base */,
+				BECF9E591BF73D520081F06C /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -432,8 +441,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				BECF9E1F1BF2E4460081F06C /* Base */,
+				BECF9E5A1BF73D520081F06C /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BECF9E611BF745090081F06C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BECF9E601BF745090081F06C /* Base */,
+				BECF9E641BF746DD0081F06C /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -76,10 +76,40 @@ class Survey: NSManagedObject {
 // Calculating scores
 extension Survey {
     enum Strength : String {
-        case StrengthA
-        case StrengthB
+        case Appreciation_Of_Beauty_And_Excellence = "Appreciation of beauty and excellence"
+        case Gratitude = "Gratitude"
+        case Caution = "Caution, prudence, and discretion"
+        case Self_Control = "Self-control and self-regulation"
+        case Leadership = "Leadership"
+        case Optimism = "Hope, optimism, and future-mindedness"
+        case Spirituality = "Spirituality, sense of purpose, and faith"
+        case Forgiveness = "Forgiveness and mercy"
+        case Zest = "Zest, enthusiasm, and energy"
+        case Humor = "Humor and playfulness"
+        case Modesty = "Modesty and humility"
+        case Fairness = "Fairness, equity, and justice"
+        case Citizenship = "Citizenship, teamwork, and loyalty"
+        case Social_Intelligence = "Social intelligence"
+        case Creativity = "Creativity, ingenuity, and originality"
+        case Love_Of_Learning = "Love of learning"
+        case Perspective = "Perspective wisdom"
+        case Bravery = "Bravery and valor"
+        case Capacity_to_Love_And_be_Loved = "Capacity to love and be loved"
+        case Kindness = "Kindness and generosity"
+        case Honesty = "Honesty, authenticity, and genuineness"
+        case Industry = "Industry, diligence, and perseverance"
+        case Curiosity = "Curiosity and interest in the world"
+        case Judgment = "Judgment, critical thinking, and open-mindedness"
+
+        var localizedString : String {
+            return NSLocalizedString(self.rawValue, comment: "")
+        }
         
-        static let allValues = [StrengthA, StrengthB]
+        var description : String {
+            return NSLocalizedString(self.rawValue+"#description", comment: "")
+        }
+
+        static let allValues = [Appreciation_Of_Beauty_And_Excellence, StrengthB]
     }
     
     func report() -> [Strength:Int]? {

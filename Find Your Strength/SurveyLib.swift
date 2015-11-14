@@ -14,8 +14,9 @@ class SurveyLib {
     init() {
         // TODO: init from config file
         surveies = [
-            SurveyItem(content: "Question 1", inverse: false, strength: .StrengthA),
-            SurveyItem(content: "Question 2", inverse: false, strength: .StrengthB),
+            SurveyItem(content: NSLocalizedString("Question1", comment: ""), inverse: false, strength: .Appreciation_Of_Beauty_And_Excellence),
+            SurveyItem(content: NSLocalizedString("Question2", comment: ""), inverse: false, strength: .StrengthB),
+            SurveyItem(content: NSLocalizedString("Question3", comment: ""), inverse: false, strength: .StrengthB),
         ]
     }
     

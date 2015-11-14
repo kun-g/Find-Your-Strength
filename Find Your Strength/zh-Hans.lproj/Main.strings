@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "View Report"; ObjectID = "3YH-W6-2Jr"; */
+"3YH-W6-2Jr.normalTitle" = "查看报告";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "KPa-xr-g6B"; */
+"KPa-xr-g6B.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "aWd-Bq-X3g"; */
+"aWd-Bq-X3g.normalTitle" = "注销";
+
+/* Class = "UIButton"; normalTitle = "Start Survey"; ObjectID = "hZu-l0-2IF"; */
+"hZu-l0-2IF.normalTitle" = "开始测试";
+
+/* Class = "UISegmentedControl"; hjv-X8-OsC.segmentTitles[0] = "Yes"; ObjectID = "hjv-X8-OsC"; */
+"hjv-X8-OsC.segmentTitles[0]" = "没错";
+
+/* Class = "UISegmentedControl"; hjv-X8-OsC.segmentTitles[1] = "Likely"; ObjectID = "hjv-X8-OsC"; */
+"hjv-X8-OsC.segmentTitles[1]" = "有点";
+
+/* Class = "UISegmentedControl"; hjv-X8-OsC.segmentTitles[2] = "Neutral"; ObjectID = "hjv-X8-OsC"; */
+"hjv-X8-OsC.segmentTitles[2]" = "一般般";
+
+/* Class = "UISegmentedControl"; hjv-X8-OsC.segmentTitles[3] = "Unlikely"; ObjectID = "hjv-X8-OsC"; */
+"hjv-X8-OsC.segmentTitles[3]" = "很少";
+
+/* Class = "UISegmentedControl"; hjv-X8-OsC.segmentTitles[4] = "No"; ObjectID = "hjv-X8-OsC"; */
+"hjv-X8-OsC.segmentTitles[4]" = "不是";
+
+/* Class = "UILabel"; text = "Being able to come up with new and different ideas is one of my strong points."; ObjectID = "i14-Nn-LBT"; */
+"i14-Nn-LBT.text" = "Being able to come up with new and different ideas is one of my strong points.";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "suK-K0-0zs"; */
+"suK-K0-0zs.text" = "Detail";
