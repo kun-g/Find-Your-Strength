@@ -57,7 +57,6 @@ class Survey: NSManagedObject {
         let currentQuestionNotAnswerd = currentQuestion != nil && currentQuestion!.answer == .Nil
         let currentQuestionButNotLoaded = currentQuestion == nil && questions.count != 0
         
-        // TODO: fix this hardcoded -1
         if currentQuestionNotAnswerd {
             return currentQuestion
         } else if currentQuestionButNotLoaded {
@@ -101,6 +100,9 @@ extension Survey {
         case Curiosity = "Curiosity and interest in the world"
         case Judgment = "Judgment, critical thinking, and open-mindedness"
 
+
+
+
         var localizedString : String {
             return NSLocalizedString(self.rawValue, comment: "")
         }
@@ -109,7 +111,9 @@ extension Survey {
             return NSLocalizedString(self.rawValue+"#description", comment: "")
         }
 
-        static let allValues = [Appreciation_Of_Beauty_And_Excellence, StrengthB]
+        static let allValues = [Appreciation_Of_Beauty_And_Excellence, Gratitude, Caution, Self_Control, Leadership, Optimism, Spirituality, Forgiveness, 
+            Zest, Humor, Modesty, Fairness, Citizenship, Social_Intelligence, Creativity, Love_Of_Learning, Perspective, Bravery, Capacity_to_Love_And_be_Loved,
+            Kindness, Honesty, Industry, Curiosity, Judgment]
     }
     
     func report() -> [Strength:Int]? {

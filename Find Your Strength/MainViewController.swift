@@ -12,11 +12,11 @@ import ParseUI
 
 class MainViewController : UIViewController {
     var hasOngoingSurvey : Bool {
-        return User.sharedInstance?.survey?.progress < 1
+        return User.sharedInstance?.survey?.progress != nil && User.sharedInstance?.survey?.progress < 1
     }
     
     var hasReport : Bool {
-        return User.sharedInstance!.survey.progress == 1
+        return User.sharedInstance?.survey?.progress == 1
     }
 
     @IBOutlet weak var reportButton: UIButton!
@@ -68,16 +68,16 @@ class MainViewController : UIViewController {
     
     @IBAction func onSurveyTouch(sender: AnyObject) {
         if hasReport {
-            let alert = UIAlertController(title: "Notice", message: "This action will overwrite the survey result, continue?", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: NSLocalizedString("Notice", comment: ""), message: NSLocalizedString("Report overwrite alert", comment: ""), preferredStyle: UIAlertControllerStyle.Alert)
             
-            alert.addAction(UIAlertAction(title: "Continue", style: .Default, handler: { (action: UIAlertAction!) in
+            alert.addAction(UIAlertAction(title: NSLocalizedString("Continue", comment: ""), style: .Default, handler: { (action: UIAlertAction!) in
                 dispatch_async(dispatch_get_main_queue(), {
                     User.sharedInstance?.startSurvey(true)
                     self.performSegueWithIdentifier("startSurvey", sender: self)
                 })
             }))
             
-            alert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+            alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .Default, handler: { (action: UIAlertAction!) in
             }))
             
             self.presentViewController(alert, animated: true, completion: nil)

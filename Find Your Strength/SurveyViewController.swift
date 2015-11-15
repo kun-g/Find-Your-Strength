@@ -24,7 +24,7 @@ class SurveyViewController : UIViewController {
     }
 
     func setupCurrentQuestion () {
-        questionLabel.text = survey.currentQuestion!.content
+        questionLabel.text = survey.currentQuestion!.strength.localizedString + ":" + survey.currentQuestion!.content!
         answerControl.selectedSegmentIndex = survey.currentQuestion!.answer.rawValue
         progressBar.progress = survey.progress
     }

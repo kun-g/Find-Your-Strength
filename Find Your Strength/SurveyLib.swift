@@ -12,12 +12,13 @@ class SurveyLib {
     var surveies : [SurveyItem] = []
     
     init() {
-        // TODO: init from config file
-        surveies = [
-            SurveyItem(content: NSLocalizedString("Question1", comment: ""), inverse: false, strength: .Appreciation_Of_Beauty_And_Excellence),
-            SurveyItem(content: NSLocalizedString("Question2", comment: ""), inverse: false, strength: .StrengthB),
-            SurveyItem(content: NSLocalizedString("Question3", comment: ""), inverse: false, strength: .StrengthB),
-        ]
+        let orderedStrength:[Survey.Strength] = [.Curiosity, .Love_Of_Learning, .Judgment, .Creativity, .Social_Intelligence, .Perspective, .Bravery,
+            .Industry, .Honesty, .Kindness, .Capacity_to_Love_And_be_Loved, .Citizenship, .Fairness, .Leadership, .Self_Control, .Caution,
+            .Appreciation_Of_Beauty_And_Excellence, .Gratitude, .Optimism, .Spirituality, .Modesty, .Humor, .Zest, .Forgiveness]
+        for var i = 0; i < 240; i++ {
+            let content = NSLocalizedString("Question\(i+1)", comment: "")
+            surveies.append(SurveyItem(content: content, inverse: false, strength: orderedStrength[i%orderedStrength.count]))
+        }
     }
     
     var count : Int {

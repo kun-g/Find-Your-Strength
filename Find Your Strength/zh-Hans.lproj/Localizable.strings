@@ -1,0 +1,324 @@
+/* 
+  Localizable.strings
+  Find Your Strength
+
+  Created by 郭坤 on 15/11/14.
+  Copyright © 2015年 Lambda Theory. All rights reserved.
+*/
+"Curiosity and interest in the world" = "好奇心";
+"Curiosity and interest in the world#description" = "你对所有东西都充满好奇。你永远在问问题，你觉得所有的东西都很有吸引力。你喜欢探索和发现。";
+
+"Love of learning" = "喜爱学习";
+"Love of learning#description" = "你喜欢学习新东西，不论在课堂上还是生活中。你喜欢上学、阅读、去图书馆，去任何可以学到新东西的地方。";
+
+"Judgment, critical thinking, and open-mindedness" = "判断力";
+"Judgment, critical thinking, and open-mindedness#description" = "能够周翔的考虑事情的方方面面是你很重要的一个优势。你不会草率下结论，会根据真凭实据来做决定，并且你愿意改变主意。";
+
+"Creativity, ingenuity, and originality" = "创造力";
+"Creativity, ingenuity, and originality#description" = "你能找到新的方法来完成一些事情。如果有新的方法来做一件事，你一定不会满足于用原来的方法来做这件事。";
+
+"Social intelligence" = "社交智慧";
+"Social intelligence#description" = "你能了解别人的动机和感觉，并且能对它做出很好的回应。你能注意到人与人之间的不同点尤其是他们情绪、脾气、动机和意图的不同，然后针对这些不同做出恰当反应。";
+
+"Perspective wisdom" = "洞察力";
+"Perspective wisdom#description" = "虽然你不认为自己很有智慧，但是你的朋友却这样认为。其他人会请你给他们提供指引，用你的经验来帮助他们解决问题。你有自己的看待这个世界的方式，并且大家都很认可。";
+
+"Bravery and valor" = "勇敢";
+"Bravery and valor#description" = "你是个勇敢的人，你不会在威胁和挑战面前退缩。即使有人反对，你也会站出来捍卫自己的信念。";
+
+"Industry, diligence, and perseverance" = "毅力";
+"Industry, diligence, and perseverance#description" = "你有始有终，你会承担起困难的工作并把它完成。一旦开始，你就会坚持到最后。";
+
+"Honesty, authenticity, and genuineness" = "正直";
+"Honesty, authenticity, and genuineness#description" = "你是个正直、诚实的人，不仅仅是实话实说，而且真实的面对生活。你不虚伪，为人真诚。";
+
+"Kindness and generosity" = "仁慈与慷慨";
+"Kindness and generosity#description" = "你对别人很仁慈、很慷慨，别人找你帮忙时，你都会尽力提供帮助。你喜欢帮别人的忙，即使不太熟的朋友也一样。";
+
+"Capacity to love and be loved" = "爱的能力";
+"Capacity to love and be loved#description" = "你非常珍惜自己与别人的亲密关系，并且别人也和你一样珍惜这段关系。";
+
+"Citizenship, teamwork, and loyalty" = "公民精神、团队精神、责任、忠诚";
+"Citizenship, teamwork, and loyalty#description" = "你是集体中的优秀分子，你有忠心，有团队精神，努力做好本职工作，努力使团队成功。";
+
+"Fairness, equity, and justice" = "公平与公正";
+"Fairness, equity, and justice#description" = "你不会让个人感情影响自己的决定，会给每个人平等的机会。";
+
+"Leadership" = "领导力";
+"Leadership#description" = "你有很好的组织才能，你能监督任务的执行。你能与组织成员保持良好的关系，让每个人都有参与感，并能如期实现工作目标。";
+
+"Self-control and self-regulation" = "自制力";
+"Self-control and self-regulation#description" = "你能够控制住自己的情绪、欲望、需求和冲动，而不是反过来被这些东西控制。";
+
+"Caution, prudence, and discretion" = "谨慎";
+"Caution, prudence, and discretion#description" = "你是个谨慎的人，你是个有远见的人，会三思而后行，不会做出让自己后悔的事情。";
+
+"Modesty and humility" = "谦虚";
+"Modesty and humility#description" = "你不喜欢出风头，宁愿让成绩自己说话。你不认为自己很了不起，别人也尊重你的价值和你的谦虚。";
+
+"Appreciation of beauty and excellence" = "对美和卓越的欣赏";
+"Appreciation of beauty and excellence#description" = "你能注意到并欣赏日常生活中的各种美和卓越，从自然、艺术、数学、科学到生活体验。";
+
+"Gratitude" = "感恩";
+"Gratitude#description" = "你能感知到发生在你身上的美好事情，而且你并不把这些看做理所应当的。你的朋友和家人都知道你是个感恩的人，因为你经常会找机会表达你的谢意。";
+
+"Hope, optimism, and future-mindedness" = "希望、乐观、展望未来";
+"Hope, optimism, and future-mindedness#description" = "你期待未来会更好，并为了实现这一目标而做好计划并努力工作。你相信未来是你可以掌控的。";
+
+"Spirituality, sense of purpose, and faith" = "灵性、目标感、信仰";
+"Spirituality, sense of purpose, and faith#description" = "你对宇宙、人生的意义有坚定的信仰，知道自己的人生是由目标的。你的信仰会塑造你的行为，你的信仰也是你获得慰藉的源泉。";
+
+"Forgiveness and mercy" = "宽恕与慈悲";
+"Forgiveness and mercy#description" = "你会原谅那些曾对不起你的人，你永远会给别人第二次机会，你的处事原则是慈悲而不是复仇。";
+
+"Humor and playfulness" = "幽默";
+"Humor and playfulness#description" = "你喜欢给别人带来欢笑，你自己也喜欢欢笑。你总是看到事情光明的一面。";
+
+"Zest, enthusiasm, and energy" = "热忱、热情、热衷";
+"Zest, enthusiasm, and energy#description" = "你充满热情，会全心全意投入工作。你不会半途而废或者三心二意。对你来说，生命就是一场冒险。";
+
+"Question1"="我觉得这个世界很有趣。";
+"Question2"="我总是尽全力参加教育活动。";
+"Question3"="我总是为自己的行动找出理由。";
+"Question4"="不断产生新奇和不同的念头是我的一个长处。";
+"Question5"="我可以充分了解自己周围的环境。";
+"Question6"="我对正在发生的事情有全面的认识。";
+"Question7"="面对强烈的反对时，我经常捍卫自己的立场。";
+"Question8"="我从来不会在任务没有完成前就放弃。";
+"Question9"="我一向遵守承诺。";
+"Question10"="我从不会借故太忙而不去帮助朋友。";
+"Question11"="我总是乐于和别人建立关系，即使有风险存在。";
+"Question12"="我从不会错过小组会议或团队活动。";
+"Question13"="我总能承认自己的错误。";
+"Question14"="在团体里，我总是尽力确保每一个人都有在团体内的感觉。";
+"Question15"="对我来说，吃健康食品没有困难。";
+"Question16"="我从未故意伤害过任何人。";
+"Question17"="对我来说，生活在充满美的世界中是很重要的。";
+"Question18"="我总是向关心我的人表达感谢。";
+"Question19"="我总是对事物抱着乐观的态度。";
+"Question20"="我注重精神生活。";
+"Question21"="我以谦逊的态度对待发生在自己身上的好事。";
+"Question22"="当我的朋友心情不好时，我努力逗他们开心。";
+"Question23"="我想要全身心投入到生活中，而不是像个局外人那样旁观。";
+"Question24"="对我来说，过去的事情就让它过去了。";
+"Question25"="我从不感到无聊。";
+"Question26"="我愿意学习新事物。";
+"Question27"="我总是会从事物的正反两面去考虑问题。";
+"Question28"="当别人告诉我应该怎么做一件事时，我会主动想出可以取得相同结果的其他方法。";
+"Question29"="我知道如何在不同的社交场合下扮演适合自己的角色。";
+"Question30"="不管发生什么，我都清楚地知道什么是最重要的。";
+"Question31"="我曾经因为能够直面问题，而摆脱了情绪困扰。";
+"Question32"="我做事从不虎头蛇尾。";
+"Question33"="我的朋友认为我能够保持事情的真实性。";
+"Question34"="能为朋友做些小事让我感到很享受。";
+"Question35"="我身边有人像关心自己一样关心我，在乎我的感受。";
+"Question36"="我非常喜欢成为团体中的一份子。";
+"Question37"="能够妥协是我性格里的一个重要部分。";
+"Question38"="作为一个组织的领导，不管成员有过怎样的经历，我都对他们一视同仁。";
+"Question39"="就算美食当前，我也不会吃过量。";
+"Question40"="小心驶得万年船”是我喜欢的座右铭之一。";
+"Question41"="我会因为别人的美德而感动得几乎落泪。";
+"Question42"="听到一些伟大的善举时，我的心会受到震撼。";
+"Question43"="当别人看到事物消极的一面时，我总能乐观地发现它积极的一面。";
+"Question44"="我实践着我的宗教信仰。";
+"Question45"="我不喜欢在人群中突出自己。";
+"Question46"="大多数人认为和我在一起很有趣。";
+"Question47"="我从来没有早上不想起床的感觉。";
+"Question48"="我很少怀有怨恨。";
+"Question49"="我总是忙着做一些有趣的事情。";
+"Question50"="学习新事物让我感到兴奋。";
+"Question51"="只有掌握了所有信息以后，我才会做出决定。";
+"Question52"="我喜欢想一些新的方法去解决问题。";
+"Question53"="无论环境怎样，我都可以适应。";
+"Question54"="我拥有优秀的世界观。";
+"Question55"="我会毫不犹豫地公开阐述一个不受欢迎的观点。";
+"Question56"="我是一个以目标为行动导向的人。";
+"Question57"="我相信真诚是信任的基础。";
+"Question58"="我尽力让那些沮丧的人振作起来。";
+"Question59"="有人能够接受我的缺点。";
+"Question60"="我是一个极其忠诚的人。";
+"Question61"="我公平地对待所有人，不管他们是什么身份。";
+"Question62"="我的优点之一是能够让团体成员很好地协作， 哪怕他们之间存在分歧。";
+"Question63"="我是一个高度自律的人。";
+"Question64"="我总是思考以后再讲话。";
+"Question65"="看到美好的事物时，总能触动我内心深处的情愫。";
+"Question66"="至少每天一次，我会暂停忙碌的生活节奏，细数值得自己感激的人或事。";
+"Question67"="即使面对挑战，我也总对将来充满希望。";
+"Question68"="在困难的时刻，我的信仰从来没有离弃过我。";
+"Question69"="我从不表现得特殊。";
+"Question70"="我抓住每一个机会，用欢笑点亮别人的生活。";
+"Question71"="我做事一向全神贯注。";
+"Question72"="我从不试图报复。";
+"Question73"="我对世界总是充满了好奇。";
+"Question74"="每一天我都期盼着学习和成长的机会。";
+"Question75"="我欣赏自己批判性的思维。";
+"Question76"="我为自己的原创力而感到骄傲。";
+"Question77"="我有能力令其他人对一些事物产生兴趣。";
+"Question78"="我从来没有因为给朋友提供了错误意见而导致他/她犯错。";
+"Question79"="我支持自己坚信的事，即使会产生负面的结果。";
+"Question80"="即使会遇到阻碍，我也要把事情完成。";
+"Question81"="即使会造成伤害，我也会说出真相。";
+"Question82"="我喜欢令别人快乐。";
+"Question83"="对某些人来说，我是他们生命里最重要的人。";
+"Question84"="在团队中工作可以令我发挥出最佳状态。";
+"Question85"="对我来说，每个人的权利同样重要。";
+"Question86"="我非常擅长策划集体活动。";
+"Question87"="我会控制自己的情绪。";
+"Question88"="朋友们认为，我能在自己的言行上做出聪明的抉择。";
+"Question89"="我能看到被别人忽视的美好事物。";
+"Question90"="如果收到礼物，我总是要让送礼物的人知道我很喜欢。";
+"Question91"="对于自己希望在将来发生的事，我的脑子里有一幅清晰的图画。";
+"Question92"="我有明确的生活目标。";
+"Question93"="我从不吹嘘自己的成就。";
+"Question94"="不论在任何情形下，我都尝试寻找乐趣。";
+"Question95"="我热爱自己所做的事情。";
+"Question96"="我一向容许别人把错误留在过去，重新开始。";
+"Question97"="我对各式各样的活动都感到兴奋。";
+"Question98"="我是个真正的终身学习者。";
+"Question99"="我的朋友欣赏我能客观地看待事物。";
+"Question100"="我总能想出新方法去做事情。";
+"Question101"="我总能知道别人行事的动机。";
+"Question102"="别人认为我的智慧超越了我这个年龄应有的程度。";
+"Question103"="别人还在侃侃而谈时，我已经付诸行动了。";
+"Question104"="我是个工作勤奋的人。";
+"Question105"="我的承诺值得信赖。";
+"Question106"="在过去的一个月里，我主动帮助过我的邻居。";
+"Question107"="不管我的家人和好友做了什么，都不能阻止我对他们的爱。";
+"Question108"="我从不对外人说我所处团体的坏话。";
+"Question109"="我给每个人机会。";
+"Question110"="作为一个有效能的领导者，我一视同仁。";
+"Question111"="我从不想要长远来看有害的东西，即使它们在短期内让我感觉不错。";
+"Question112"="我总是避免参加会对身体造成伤害的活动。";
+"Question113"="我经常被电影里所描述的美感动得说不出话。";
+"Question114"="我是一个充满感恩之心的人。";
+"Question115"="如果得到不好的成绩或评价，我会专注于下次机会，并计划做得更好。";
+"Question116"="在过去的二十四小时内， 我花了三十分钟祈祷、冥想或沉思。";
+"Question117"="我为自己是一个普通人而骄傲。";
+"Question118"="我试着在所做的任何事情中添加一点幽默的成分。";
+"Question119"="我期待新的一天的到来。";
+"Question120"="我希望人们能学会原谅和遗忘。";
+"Question121"="我有很多兴趣爱好。";
+"Question122"="我经常尽量去参观博物馆。";
+"Question123"="如果需要，我可以成为一个高度理性的思考者。";
+"Question124"="朋友们认为我有各种各样的新奇想法。";
+"Question125"="我一向能与刚认识的朋友融洽相处。";
+"Question126"="我总能看到事物的全部。";
+"Question127"="我总能捍卫自己的信念。";
+"Question128"="我不言放弃。";
+"Question129"="我忠于自己的价值观。";
+"Question130"="在朋友生病时，我总会致电问候。";
+"Question131"="我总能感受到自己生命中有爱存在。";
+"Question132"="维持团体内的和睦对我来说很重要。";
+"Question133"="我极其坚持正义和公平的原则。";
+"Question134"="我相信人的本性让我们聚在一起，为了共同的目标而努力。";
+"Question135"="我可以一直节食。";
+"Question136"="行动前，我总是先考虑可能出现的结果。";
+"Question137"="我总能觉察到周围环境里存在的自然美。";
+"Question138"="我竭尽所能去答谢那些对我好的人。";
+"Question139"="我对未来五年内想要做的事情有所计划。";
+"Question140"="我的信仰塑造了现在的我。";
+"Question141"="我比较喜欢让其他人谈论他们自己。";
+"Question142"="我从不让沮丧的境遇带走我的幽默感。";
+"Question143"="我精力充沛。";
+"Question144"="我总是愿意给他人改正错误的机会。";
+"Question145"="在任何情形下，我都能找到乐趣。";
+"Question146"="我常常阅读。";
+"Question147"="深思熟虑是我的特点之一。";
+"Question148"="我经常有原创性的思维。";
+"Question149"="我善于体会别人的感受。";
+"Question150"="我对人生有成熟的看法。";
+"Question151"="我总能直面自己的恐惧。";
+"Question152"="我工作时从不被别的事情分散精力。";
+"Question153"="不曾夸大过自己，我为此而骄傲。";
+"Question154"="我为他人的好运而兴奋，就像自己获得好运一样。";
+"Question155"="我能够表达对别人的爱。";
+"Question156"="我在任何条件下都支持我的队员或组员。";
+"Question157"="我不会无功受禄。";
+"Question158"="朋友总认为我是一个强硬但公正的领导者。";
+"Question159"="我总是认为“知足常乐”";
+"Question160"="我一向对错分明。";
+"Question161"="我非常喜欢各种形式的艺术。";
+"Question162"="我对生命中所得到的一切充满感激。";
+"Question163"="我知道，有一天我会成功实现自己所设定的目标。";
+"Question164"="我相信每个人都有一个生存目的。";
+"Question165"="我很少刻意引人注目。";
+"Question166"="我很有幽默感。";
+"Question167"="我会迫不及待地开始一项新的计划。";
+"Question168"="我很少试图报复别人。";
+"Question169"="我很会自娱自乐。";
+"Question170"="如果想了解什么，我会立刻到图书馆或者互联网上查询。";
+"Question171"="我总会权衡利弊。";
+"Question172"="我的想象力超过朋友。";
+"Question173"="我清楚自己的感觉和动机。";
+"Question174"="别人喜欢来征询我的建议。";
+"Question175"="我曾经战胜过痛苦与失望。";
+"Question176"="一旦决定做什么事情，我就会坚持下去。";
+"Question177"="我非常讨厌装腔作势。";
+"Question178"="我享受善待他人的感觉。";
+"Question179"="我能够接受别人的爱。";
+"Question180"="即使不同意团体领袖的观点，我还是会尊重他。";
+"Question181"="即使不喜欢一个人，我也会公平地对待他/她。";
+"Question182"="作为一个团体领导，我尽量让每一个成员快乐。";
+"Question183"="无论在办公室、学校或家中，我总是在限期之前完成各种任务。";
+"Question184"="我是个非常小心的人。";
+"Question185"="他人认为生命中理所当然存在着的简单事物，我却会对它们心存敬畏。";
+"Question186"="当审视自己的生活时，我发现有很多地方值得感恩。";
+"Question187"="我确信自己的做事方法会得到最佳的效果。";
+"Question188"="我相信一种全宇宙的力量，比如神。";
+"Question189"="别人告诉我，谦虚是我最显著的优点之一。";
+"Question190"="能使别人微笑或大笑，令我感到满足。";
+"Question191"="我迫不及待地想要知道自己未来的生活是什么样子。";
+"Question192"="通常情况下，我愿意给别人第二次机会。";
+"Question193"="我认为我的生活非常有趣。";
+"Question194"="我阅读大量各种各样的书籍。";
+"Question195"="我尝试为自己的重大决定找出好的理由。";
+"Question196"="上个月，我为自己生命中的难题想出了一个创新性的解决方法。";
+"Question197"="我总是知道说什么话可以让别人感觉良好。";
+"Question198"="或许不会跟别人说起，但我认为自己是个智者。";
+"Question199"="听到有人说卑鄙的事情，我总会大声提出抗议。";
+"Question200"="做计划时，我有把握付诸实行。";
+"Question201"="朋友总说我是一个实际的人。";
+"Question202"="能让别人一起分享成功所带来的公众瞩目，这让我感到高兴。";
+"Question203"="在我的邻居、同事或同学中，有我真正关心的人。";
+"Question204"="尊重团体的决定对我来说很重要。";
+"Question205"="我认为每个人都应该有发言权。";
+"Question206"="作为团体领导者，我认为每个成员都有对团体所做的事发表意见的权利。";
+"Question207"="对我来说，练习与表演一样重要。";
+"Question208"="我总是谨慎地做出决定。";
+"Question209"="我经常渴望能感受伟大的艺术，比如音乐，戏剧或绘画。";
+"Question210"="每天我都心怀深刻的感激之情。";
+"Question211"="情绪低落时，我总是回想生活中美好的事情。";
+"Question212"="信仰使我的生命变得重要。";
+"Question213"="没有人认为我是一个自大的人。";
+"Question214"="我更相信人生是游乐场而不是战场。";
+"Question215"="早晨醒来，我会为了新一天中存在的无限可能性而兴奋。";
+"Question216"="我不想看到任何人受苦，哪怕是我最大的敌人。";
+"Question217"="我非常喜欢听别人讲述其他国家和文化。";
+"Question218"="我喜欢阅读非小说类的书籍作为消遣。";
+"Question219"="朋友欣赏我的判断力。";
+"Question220"="我强烈希望在来年做一些创新的事。";
+"Question221"="很少有人能利用我。";
+"Question222"="别人认为我是一个聪明的人。";
+"Question223"="我是一个勇敢的人。";
+"Question224"="能得到自己想要的，是因为我付出了努力。";
+"Question225"="我想象不到说谎和骗人是怎么一回事。";
+"Question226"="我总是倾听别人讲述他们的问题。";
+"Question227"="和他人分享我的感受是一件容易的事。";
+"Question228"="为了集体的利益，我愿意牺牲个人利益。";
+"Question229"="我相信聆听每个人的意见是值得的。";
+"Question230"="大权在握的时候，我不会因小事随便责怪他人。";
+"Question231"="我定时锻炼身体。";
+"Question232"="别人相信我能帮他们保守秘密。";
+"Question233"="在过去的一年中，我创造了一些美好的东西。";
+"Question234"="在生命中，我一直拥有别人给予的深厚的祝福。";
+"Question235"="我期待会发生最好的事情。";
+"Question236"="我的生命有一个使命。";
+"Question237"="别人都因我的谦逊而走近我。";
+"Question238"="我因富于幽默而被众人所知。";
+"Question239"="人们形容我为一个热情洋溢的人";
+"Question240"="当人家待我不好时，我尝试以谅解來回应。";
+
+"Notice"="注意";
+"Report overwrite alert"="这个操作将会覆盖之前的测试结果，是否继续？";
+"Continue"="继续";
+"Cancel"="取消";
