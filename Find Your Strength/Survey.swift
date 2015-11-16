@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import Parse
 
 class Survey: NSManagedObject {
     enum EntitiName : String {
@@ -17,15 +18,19 @@ class Survey: NSManagedObject {
     @NSManaged var questions: NSSet
     @NSManaged var user: User
     var currentQuestion : Question?
+    var pfObject : PFObject!
     
     override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
+        pfObject = PFObject(className: "Survey")
     }
     
     init(user: User, insertIntoManagedObjectContext context: NSManagedObjectContext) {
         let entity = NSEntityDescription.entityForName(EntitiName.Name.rawValue, inManagedObjectContext: context)!
         super.init(entity: entity, insertIntoManagedObjectContext: context)
         self.user = user
+        
+        pfObject = PFObject(className: "Survey")
     }
     
     override func awakeFromFetch() {
@@ -53,7 +58,6 @@ class Survey: NSManagedObject {
         guard progress < 1 else {
             return nil
         }
-        
         let currentQuestionNotAnswerd = currentQuestion != nil && currentQuestion!.answer == .Nil
         let currentQuestionButNotLoaded = currentQuestion == nil && questions.count != 0
         
@@ -69,6 +73,26 @@ class Survey: NSManagedObject {
     
     var currentQuestionID : Int {
         return questions.count + 1
+    }
+    
+    func compress () -> String {
+        let result = questions.sortedArrayUsingDescriptors([NSSortDescriptor(key: "id", ascending: true)])
+            .map({question in
+                return Int((question as! Question).answerRaw)
+            })
+            .reduce("", combine: { result, item in
+                return result + String(item)
+            })
+        return result
+    }
+    
+    func restore (data: String) {
+        var id = 0
+        data.characters.forEach {answer in
+            self.currentQuestion = Question(survey:self, id: id, context: CoreDataManager.sharedInstance().managedObjectContext)
+            id += 1
+            self.currentQuestion?.answerRaw = Int16(String(answer))!
+        }
     }
 }
 
@@ -99,8 +123,6 @@ extension Survey {
         case Industry = "Industry, diligence, and perseverance"
         case Curiosity = "Curiosity and interest in the world"
         case Judgment = "Judgment, critical thinking, and open-mindedness"
-
-
 
 
         var localizedString : String {

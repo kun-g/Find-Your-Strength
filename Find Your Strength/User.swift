@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import Parse
 
 class User: NSManagedObject {
     enum EntitiName : String {
@@ -16,7 +17,7 @@ class User: NSManagedObject {
     
     @NSManaged var name: NSString
     @NSManaged var survey : Survey!
-    
+
     override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
     }
@@ -33,11 +34,35 @@ class User: NSManagedObject {
                 CoreDataManager.sharedInstance().managedObjectContext.deleteObject(survey)
             }
             survey = Survey(user: self, insertIntoManagedObjectContext: CoreDataManager.sharedInstance().managedObjectContext)
+            
+            save()
         }
 
         survey.next()
         return survey
     }
+    
+    func save() {
+        if PFUser.currentUser() != nil && survey != nil{
+            PFUser.currentUser()!["Survey"] = survey.compress()
+            PFUser.currentUser()!.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+                if (error != nil) {
+                    print(error!.description)
+                }
+            }
+        }
+    }
+    
+    override func didSave() {
+        save()
+        super.didSave()
+    }
+}
+class TestObject : AnyObject {
+    let number: Int = 0
+    let name: String = ""
+    let strength: Survey.Strength = .Love_Of_Learning
+    
 }
 
 extension User {

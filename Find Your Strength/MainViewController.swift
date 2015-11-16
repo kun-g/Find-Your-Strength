@@ -39,6 +39,7 @@ class MainViewController : UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         checkIfLoggedIn()
+        reportButton.hidden = !hasReport
     }
     
     func checkIfLoggedIn () {
@@ -56,6 +57,11 @@ class MainViewController : UIViewController {
         if PFUser.currentUser() != nil {
             if User.loadUser((PFUser.currentUser()?.username)!) == nil {
                 User.newUser((PFUser.currentUser()?.username!)!)
+                if PFUser.currentUser()!["Survey"] != nil {
+                    let survey = Survey(user: User.sharedInstance!, insertIntoManagedObjectContext: CoreDataManager.sharedInstance().managedObjectContext)
+                    survey.restore(PFUser.currentUser()!["Survey"] as! String)
+                }
+                
                 CoreDataManager.sharedInstance().saveContext()
             }
         }

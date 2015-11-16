@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import Parse
 
 class Question : NSManagedObject {
     enum EntitiName : String {
@@ -15,7 +16,7 @@ class Question : NSManagedObject {
     }
     
     enum Answer : Int {
-        case Nil = -1
+        case Nil = 9
         case Yes = 0
         case Likely = 1
         case Neutral = 2

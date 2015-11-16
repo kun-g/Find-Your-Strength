@@ -24,8 +24,8 @@ class SurveyViewController : UIViewController {
     }
 
     func setupCurrentQuestion () {
-        questionLabel.text = survey.currentQuestion!.strength.localizedString + ":" + survey.currentQuestion!.content!
-        answerControl.selectedSegmentIndex = survey.currentQuestion!.answer.rawValue
+        questionLabel.text = survey.currentQuestion!.content!
+        answerControl.selectedSegmentIndex = -1
         progressBar.progress = survey.progress
     }
 
@@ -38,6 +38,7 @@ class SurveyViewController : UIViewController {
     }
 
     func onSurveyComplete() {
+        User.sharedInstance?.save()
         progressBar.progress = survey.progress
         performSegueWithIdentifier("showReport", sender: self)
     }

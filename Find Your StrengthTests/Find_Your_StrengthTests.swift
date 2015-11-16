@@ -61,7 +61,23 @@ class Find_Your_StrengthTests: XCTestCase {
         }
         
         XCTAssert(survey.progress == 1, "Complete")
-        print(survey.report())
+    }
+    
+    func testSurveyCompress () {
+        let user = User.newUser("Test")!
+        user.startSurvey()
+        let survey = user.survey
+        survey.currentQuestion!.answer = .Likely
+        survey.next()
+        XCTAssert(survey.compress() == "19")
+    }
+    
+    func testSurveyRestore () {
+        let user = User.newUser("Test")!
+        let survey = Survey(user: user, insertIntoManagedObjectContext: CoreDataManager.sharedInstance().managedObjectContext)
+        survey.restore("19")
+        XCTAssert(survey.questions.count == 2)
+        XCTAssert(survey.currentQuestion!.answer == .Nil)
     }
     
 }
