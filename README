@@ -1,0 +1,28 @@
+Find Your Strength
+
+With this app, you can take "VIA Survey of Character Strengths" on your iPhone/iPad.
+
+How to use
+
+*Sign up/Login*
+You need an account to use this app, so you should sign up first.
+If you uninstall the app, your data won't be lost. Just install the app and login, your data will be back.
+
+"Main view"
+You can tap "Start Survey" to stat a survey, then you will be asked 240 questions, after you answered each question, a report will be generated for you.
+You can tap "View Report" to view your strength report, this button only visible when you had finished a survey.
+You can tap "Logout" at the bottom to logout.
+
+"Survey view"
+This view is where we answer our questions.
+There is a question on the top and five answers below the question, you should select an answer that fits your condition.
+There is also a progress bar at the bottom, it grows as you answer questions.
+When you finish all 240 questions, your answers will be saved and evaluated. Then your report will be ready. The report will be shown for you automaticlly.
+
+"Report view"
+This view show all strength by order. The first and second will be your most import strength, you should pay more attention on how to use them in daily life.
+
+
+How to build
+
+Open "Find Your Strength.xcworkspace" with Xcode and hit Run button.
