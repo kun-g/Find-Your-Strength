@@ -24,9 +24,15 @@ class ReportViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TableCell", forIndexPath: indexPath)
-        let (strength, score) = report[indexPath.item]
+        let (strength, _) = report[indexPath.item]
         cell.textLabel!.text = strength.localizedString
-        cell.detailTextLabel?.text = String(score)
+        cell.detailTextLabel?.text = strength.description
+        if indexPath.item % 2 == 1 {
+            cell.backgroundColor = UIColor.lightGrayColor()
+        } else {
+            cell.backgroundColor = UIColor.whiteColor()
+        }
+        
         
         return cell
     }
@@ -34,4 +40,9 @@ class ReportViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return report.count
     }
+ 
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
+    }
+
 }
