@@ -300,3 +300,4 @@
 "Report overwrite alert"="This action will overwrite the survey result, continue?";
 "Continue"="Continue";
 "Cancel"="Cancel";
+"Fail to login"="Fail to login";

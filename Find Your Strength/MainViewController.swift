@@ -11,6 +11,7 @@ import Parse
 import ParseUI
 
 class MainViewController : UIViewController {
+
     var hasOngoingSurvey : Bool {
         return User.sharedInstance?.survey?.progress != nil && User.sharedInstance?.survey?.progress < 1
     }
@@ -21,6 +22,7 @@ class MainViewController : UIViewController {
 
     @IBOutlet weak var reportButton: UIButton!
     @IBOutlet weak var surveyButton: UIButton!
+    var loginViewControl : PFLogInViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +46,10 @@ class MainViewController : UIViewController {
     
     func checkIfLoggedIn () {
         if PFUser.currentUser() == nil {
-            let logInController = PFLogInViewController()
-            logInController.delegate = self
-            logInController.signUpController?.delegate = self
-            self.presentViewController(logInController, animated:true, completion: nil)
+            loginViewControl = PFLogInViewController()
+            loginViewControl.delegate = self
+            loginViewControl.signUpController?.delegate = self
+            self.presentViewController(loginViewControl, animated:true, completion: nil)
         } else {
             loadUser()
         }
@@ -115,10 +117,15 @@ class MainViewController : UIViewController {
     }
 }
 
+
 extension MainViewController: PFLogInViewControllerDelegate {
     func logInViewController(logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
-        print("didFailToLogInWithError", error?.localizedDescription)
-        dismissViewControllerAnimated(true, completion: nil)
+        let alertCtr = UIAlertController(title: "Alert", message: NSLocalizedString("Fail to login", comment: ""), preferredStyle: UIAlertControllerStyle.Alert)
+        alertCtr.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.loginViewControl.presentViewController(alertCtr, animated: true, completion: nil)
+        })
     }
     
     func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {

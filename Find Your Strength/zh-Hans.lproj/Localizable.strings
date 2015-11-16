@@ -322,3 +322,4 @@
 "Report overwrite alert"="这个操作将会覆盖之前的测试结果，是否继续？";
 "Continue"="继续";
 "Cancel"="取消";
+"Fail to login"="登陆失败";

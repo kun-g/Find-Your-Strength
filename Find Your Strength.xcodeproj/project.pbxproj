@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6BF5EF0C2E405B905904371A /* Pods_Find_Your_Strength.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC0426F01C57624BA483656 /* Pods_Find_Your_Strength.framework */; };
+		BE237D101BF9E4BD00662EC5 /* SpinnerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE237D0F1BF9E4BD00662EC5 /* SpinnerProtocol.swift */; };
 		BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E121BF2E4460081F06C /* AppDelegate.swift */; };
 		BECF9E181BF2E4460081F06C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECF9E161BF2E4460081F06C /* Main.storyboard */; };
 		BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */; };
@@ -48,6 +49,9 @@
 		5173A1730445D299C2054670 /* Pods-Find Your Strength.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Your Strength.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find Your Strength/Pods-Find Your Strength.release.xcconfig"; sourceTree = "<group>"; };
 		6DC0426F01C57624BA483656 /* Pods_Find_Your_Strength.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_Your_Strength.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9274E95C5DDEDEFF21C3067B /* Pods-Find Your Strength.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Your Strength.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find Your Strength/Pods-Find Your Strength.debug.xcconfig"; sourceTree = "<group>"; };
+		BE237D0B1BF9E24C00662EC5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		BE237D0E1BF9E25400662EC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE237D0F1BF9E4BD00662EC5 /* SpinnerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerProtocol.swift; sourceTree = "<group>"; };
 		BECF9E0F1BF2E4460081F06C /* Find Your Strength.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Your Strength.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECF9E121BF2E4460081F06C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECF9E171BF2E4460081F06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +75,6 @@
 		BECF9E531BF48D990081F06C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BECF9E551BF6D16B0081F06C /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		BECF9E591BF73D520081F06C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		BECF9E5A1BF73D520081F06C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		BECF9E601BF745090081F06C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BECF9E641BF746DD0081F06C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BECF9E691BF830610081F06C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -120,6 +123,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE237D111BF9E4C200662EC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE237D0F1BF9E4BD00662EC5 /* SpinnerProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		BECF9E061BF2E4450081F06C = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +163,7 @@
 				BECF9E211BF2E4460081F06C /* Info.plist */,
 				BECF9E611BF745090081F06C /* Localizable.strings */,
 				BECF9E191BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld */,
+				BE237D111BF9E4C200662EC5 /* View */,
 				BECF9E451BF2EAFF0081F06C /* Controller */,
 				BECF9E4A1BF383A00081F06C /* Model */,
 			);
@@ -388,6 +400,7 @@
 				BECF9E1B1BF2E4460081F06C /* Find_Your_Strength.xcdatamodeld in Sources */,
 				BECF9E491BF383990081F06C /* Survey.swift in Sources */,
 				BECF9E561BF6D16B0081F06C /* ReportViewController.swift in Sources */,
+				BE237D101BF9E4BD00662EC5 /* SpinnerProtocol.swift in Sources */,
 				BECF9E4E1BF384880081F06C /* CoreDataStackManager.swift in Sources */,
 				BECF9E4C1BF383AF0081F06C /* Question.swift in Sources */,
 				BECF9E131BF2E4460081F06C /* AppDelegate.swift in Sources */,
@@ -442,7 +455,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				BECF9E1F1BF2E4460081F06C /* Base */,
-				BECF9E5A1BF73D520081F06C /* zh-Hans */,
+				BE237D0B1BF9E24C00662EC5 /* zh-Hans */,
+				BE237D0E1BF9E25400662EC5 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

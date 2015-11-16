@@ -11,12 +11,13 @@ import UIKit
 import Parse
 import ParseUI
 
-class SurveyViewController : UIViewController {
+class SurveyViewController : UIViewController, Spinner {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerControl: UISegmentedControl!
     @IBOutlet weak var progressBar: UIProgressView!
     
     var survey : Survey!
+    var spinnerView : UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +39,28 @@ class SurveyViewController : UIViewController {
     }
 
     func onSurveyComplete() {
-        User.sharedInstance?.save()
+        startSpinner()
+        User.sharedInstance?.save( { (success: Bool, error: NSError?) -> Void in
+            self.stopSpinner()
+            if (error != nil) {
+                self.alert(error!.description)
+            }
+            self.performSegueWithIdentifier("showReport", sender: self)
+        })
         progressBar.progress = survey.progress
-        performSegueWithIdentifier("showReport", sender: self)
+        
     }
-
+    
+    
+    func alert (message : String) {
+        let alertCtr = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertCtr.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(alertCtr, animated: true, completion: nil)
+        })
+    }
+    
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showReport" {

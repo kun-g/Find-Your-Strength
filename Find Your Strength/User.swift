@@ -34,28 +34,17 @@ class User: NSManagedObject {
                 CoreDataManager.sharedInstance().managedObjectContext.deleteObject(survey)
             }
             survey = Survey(user: self, insertIntoManagedObjectContext: CoreDataManager.sharedInstance().managedObjectContext)
-            
-            save()
         }
 
         survey.next()
         return survey
     }
     
-    func save() {
+    func save(callback: (success: Bool, error: NSError?) -> Void) {
         if PFUser.currentUser() != nil && survey != nil{
             PFUser.currentUser()!["Survey"] = survey.compress()
-            PFUser.currentUser()!.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-                if (error != nil) {
-                    print(error!.description)
-                }
-            }
+            PFUser.currentUser()!.saveInBackgroundWithBlock(callback)
         }
-    }
-    
-    override func didSave() {
-        save()
-        super.didSave()
     }
 }
 class TestObject : AnyObject {
